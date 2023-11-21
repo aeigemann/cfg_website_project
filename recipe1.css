@@ -1,0 +1,24 @@
+.recipe-info {
+    background-color: palegoldenrod;
+    text-align: center;
+
+}
+
+.recipe-images {
+    font-size: x-large;
+    text-align: center;
+}
+
+.recipe-duration {
+    text-align: center;
+    background-color: palevioletred;
+}
+
+.Recipe-Title-1 {
+    text-align: center;
+}
+
+.StepsTitles {
+    text-align: center;
+    text-decoration: double;
+}
