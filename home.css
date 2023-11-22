@@ -1,0 +1,299 @@
+body {
+    background-image: url("images/food-wallpaper-background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main{
+    position: absolute;
+    width: 100vw;
+    color: #000000;
+    z-index: 99;
+    width: 100%;
+    margin: 0px auto;
+    padding: 120px 0px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header{
+    grid-column: 2/ span 6;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: 100px;
+    background: #FFE4C4;
+    border-radius: 15px;
+}
+
+section, footer{
+    grid-column: 2 / 10;
+    padding: 1rem;
+    background: #FFE4C4;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 100px;
+    border-radius: 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #9b6d36;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+.header-text h1 span{
+    color: #9b6d36;
+}
+
+/*-----------sections sweet and savory-----------*/
+
+#portfolio{
+    padding: 50px 0;
+}
+
+.recipe-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.recipe{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.recipe img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), #9b6d36);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 16px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.layer ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.recipe:hover img{
+    transform: scale(1.1);
+}
+
+.recipe:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #9b6d36;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #9b6d36;
+}
+
+/*-----------copyright-----------*/
+
+#copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #FFE4C4;
+    font-weight: 300;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+/*-----------CSS for small screens-----------*/
+nav .fa-solid{
+display: none;
+}
+
+@media only screen and (max-width: 600px){
+
+.header-text{
+    margin-top: 100%;
+    font-size: 16px;
+}
+
+.header-text h1{
+    font-size: 30px;
+}
+
+nav .fa-solid{
+    display: block;
+    font-size: 25px;
+    color: #FFE4C4;
+}
+
+nav ul{
+    background-color: #9b6d36;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+
+nav ul li a{
+    color: #FFE4C4;
+}
+
+nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+
+nav .fa-solid{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+/*-----------about-----------*/
+
+.sub-title{
+    font-size: 40px;
+}
+
+.about-col-1, .about-col-2{
+    flex-basis: 100%;
+}
+
+.about-col-1{
+    margin-bottom: 30px;
+}
+
+.about-col-2{
+    font-size: 14px;
+}
+
+.tab-links{
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+/*-----------contact-----------*/
+.contact-left, .contact-right{
+    flex-basis: 100%;
+}
+
+.copyright{
+    font-size: 14px;
+}
+}

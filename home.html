@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="home.css" />
+        <script src="https://kit.fontawesome.com/4c4e25c97e.js" crossorigin="anonymous"></script>
+        <title>Code First Girls Project</title>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <div class="container">
+                    <nav>
+                        <img src="images/cupcake.n.jpg" class="logo">
+                        <ul id="sidemenu">
+                            <li  onclick="closemenu()"><a href="#savory-section">Savory</a></li>
+                            <li onclick="closemenu()"><a href="#sweet-section">Sweet</a></li>
+                            <li onclick="closemenu()"><a href="#footer">Contact</a></li>
+                            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                        </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    </nav>
+                    <div class="header-text">
+                        <p>Code First Girls Project</p>
+                        <h1> <span>Recipe</span> Website</h1>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div id="savory-section">
+                    <div class="container">
+                        <h1 class="sub-title">Savory</h1>
+                        <div class="recipe-list">
+                            <div class="recipe">
+                                <img src="images/veggie-stir-fry-noodles.jpg">
+                                <div class="layer">
+                                    <h3>Veggie Stir Fry Noodles</h3>
+                                    <ul>
+                                        <li>Easy make family dinner stir fry noddles</li>
+                                    </ul>
+                                    <a href="recipe1.html">see full recipe</a>
+                                </div>
+                            </div>
+                            <div class="recipe col-sm">
+                                <img src="images/creamy-potatoe-salad.jpg">
+                                <div class="layer">
+                                    <h3>Creamy Potatoe Salad</h3>
+                                    <ul>
+                                        <li>German style creamy potatoe salad perfect for a summer BBQ</li>
+                                    </ul>
+                                    <a href="recipe1.html">see full recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="sweet-section">
+                    <div class="container">
+                        <h1 class="sub-title">Sweet</h1>
+                        <div class="recipe-list">
+                            <div class="recipe">
+                                <img src="images/chocolate-chip-cookies.jpg">
+                                <div class="layer">
+                                    <h3>Chocolate Chip Cookies</h3>
+                                    <ul>
+                                        <li>Soft Vegan Chocolate Chip Cookies with Apple Puree</li>
+                                    </ul>
+                                    <a href="recipe1.html">see full recipe</a>
+                                </div>
+                            </div>
+                            <div class="recipe">
+                                <img src="images/french-chocolate-cake.jpg">
+                                <div class="layer">
+                                    <h3>French Chocolate Cake</h3>
+                                    <ul>
+                                        <li>Super soft and rich french chocolate cake perfect for chocolate lovers</li>
+                                    </ul>
+                                    <a href="recipe1.html">see full recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div id="copyright">
+                    <p>Copyright © Code First Girsl Project</p>
+                </div>
+            </footer>
+        </main>
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+        
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+        
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+        
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
