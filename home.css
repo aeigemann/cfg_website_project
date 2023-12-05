@@ -59,6 +59,7 @@ nav{
 
 .logo{
     width: 140px;
+    border-radius: 70px;
 }
 
 nav ul li{
@@ -72,6 +73,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    font-family: "Script MT", "Brush Script Std", "cursive";
 }
 
 nav ul li a::after{
@@ -106,9 +108,14 @@ nav ul li a:hover::after{
 
 .header-text h1 span{
     color: #9b6d36;
+    font-family: "Script MT", "Brush Script Std", "cursive";
 }
 
 /*-----------sections sweet and savory-----------*/
+
+h1 {
+    font-family: "Courier", monospace;
+}
 
 #portfolio{
     padding: 50px 0;
@@ -181,12 +188,14 @@ nav ul li a:hover::after{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: white;
-    transition: background 0.5s;
+    color: #9b6d36;
+    transition: 0.5s;
+    font-weight: 800;
 }
 
 .btn:hover{
     background: #9b6d36;
+    color: #FFE4C4;
 }
 
 /*-----------copyright-----------*/
@@ -254,6 +263,8 @@ nav .fa-solid{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    height: 1px;
+    scroll-behavior: auto;
 }
 
 /*-----------sidemenu-----------*/
