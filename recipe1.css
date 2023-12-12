@@ -276,3 +276,94 @@ nav ul li a:hover{
     margin-top: 3%;
     font-weight: bolder;
 }
+
+/*-----------CSS for small screens-----------*/
+nav .fa-solid{
+    display: none;
+    }
+    
+    @media only screen and (max-width: 600px){
+    
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    
+    .header-text h1{
+        font-size: 30px;
+    }
+    
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        color: #D9B18F;
+    }
+
+    .logo {
+        width: 70px;
+        border-radius: 70px;
+    }
+    
+    nav ul{
+        background-color: #260F01;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    
+    nav .fa-solid{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+    
+    .recipe-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+    }
+    
+    /*-----------sidemenu-----------*/
+    
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    
+    nav ul li a{
+        color: #D9B18F;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+    }
+    
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #8FA63C;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    
+    nav ul li a:hover{
+        text-decoration: none;
+        color: #D9B18F;
+    }
+}

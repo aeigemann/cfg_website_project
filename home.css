@@ -234,8 +234,13 @@ nav .fa-solid{
     color: #D9B18F;
 }
 
+.logo {
+    width: 70px;
+    border-radius: 70px;
+}
+
 nav ul{
-    background-color: #8FA63C;
+    background-color: #260F01;
     position: fixed;
     top: 0;
     right: -200px;
@@ -285,7 +290,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #D9B18F;
+    background: #8FA63C;
     position: absolute;
     left: 0;
     bottom: -6px;
