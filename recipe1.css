@@ -154,18 +154,18 @@ font-family: "Script MT", "Brush Script Std", "cursive";
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #8FA63C;
+    border: 1px solid #ffffff;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     background-color: rgba(0,0,0,.7);
     transition: 0.5s;
     font-weight: 800;
-    color: #D9B18F;
+    color: #8FA63C;
 }
 
 .btn-to-top:hover{
-    background: #9b6d36;
+    background: #8FA63C;
     color: #FFE4C4;
 }
 
